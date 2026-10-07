@@ -4,7 +4,7 @@ import { analytics } from "./config";
 import { site } from "./content";
 import { totalPrice } from "./lib/price";
 
-const DEBUG = true;
+// const DEBUG = true;
 
 const app = document.querySelector<HTMLElement>("#app")!;
 
