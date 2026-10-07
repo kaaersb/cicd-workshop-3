@@ -13,6 +13,6 @@ export function totalPrice(ticketPrice: number, order: Order): number {
   let price = ticketPrice;
   if (order.student) price = price * (1 - STUDENT_DISCOUNT);
   let total = price * order.quantity;
-  if (order.quantity > GROUP_SIZE) total = total * (1 - GROUP_DISCOUNT);
+  if (order.quantity >= GROUP_SIZE) total = total * (1 - GROUP_DISCOUNT);
   return Math.round(total);
 }
